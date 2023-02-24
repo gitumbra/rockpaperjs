@@ -32,6 +32,11 @@ function game(){
             alert("Invalid choice. Try again.")
         }
     }
+    if (playerScore === pcScore) {
+        console.log("Stalemate! Play again!")
+        pcScore = 0
+        playerScore = 0
+    }
     if (playerScore > pcScore) {
         console.log("Player is the game winner!")
     }
