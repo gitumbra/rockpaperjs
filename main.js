@@ -39,9 +39,13 @@ function game(){
     }
     if (playerScore > pcScore) {
         console.log("Player is the game winner!")
+        pcScore = 0
+        playerScore = 0
     }
     else {
         console.log("PC is the game winner!")
+        pcScore = 0
+        playerScore = 0
     }
 }
 
